@@ -5,7 +5,7 @@ import mysql.connector
 import login
 
 root =Tk()
-root.title('Database')
+root.title('DataBase')
 root.iconbitmap('data_icon.ico')
 root.geometry("400x600")
 
@@ -35,7 +35,7 @@ def update():
     conn = mysql.connector.connect(
     host ='localhost',
     user = 'root',
-    password = 'login.password',
+    password = login.password,
     database ='universitydb')
     # CURSOR
     cur = conn.cursor()
@@ -62,13 +62,13 @@ def edit():
     global editor
     editor =Tk()
     editor.title('Update a Record')
-    editor.iconbitmap('message.ico')
+    editor.iconbitmap('data_icon.ico')
     editor.geometry("400x300")
 
     conn = mysql.connector.connect(
     host ='localhost',
     user = 'root',
-    password = 'Kali@2022$',
+    password = login.password,
     database ='universitydb')
     # CURSOR
     cur = conn.cursor()
@@ -132,7 +132,7 @@ def delete():
     conn = mysql.connector.connect(
     host ='localhost',
     user = 'root',
-    password = 'Kali@2022$',
+    password = login.password,
     database ='universitydb')
     # CURSOR
     cur = conn.cursor()
@@ -152,7 +152,7 @@ def submit():
     conn = mysql.connector.connect(
     host ='localhost',
     user = 'root',
-    password = 'Kali@2022$',
+    password = login.password,
     database ='universitydb')
     # CURSOR
     cur = conn.cursor()
@@ -176,7 +176,7 @@ def query():
     conn = mysql.connector.connect(
     host ='localhost',
     user = 'root',
-    password = 'Kali@2022$',
+    password = login.password,
     database ='universitydb')
     # CURSOR
     cur = conn.cursor()
