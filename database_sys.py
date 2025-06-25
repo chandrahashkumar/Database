@@ -5,7 +5,7 @@ import mysql.connector
 import login
 
 root =Tk()
-root.title('DataBase')
+root.title('Database')
 root.iconbitmap('data_icon.ico')
 root.geometry("400x600")
 
